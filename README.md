@@ -2,19 +2,19 @@ This is source code accompanying the stackoverflow question "[ts-node cannot fin
 
 In order to replicate the issue clone this repository and run:
 
-```
-npm install
-npm run build
+```shell
+$ npm install
+$ npm run build
 
-npm run start
-// this works and print "Hello World"
+$ npm run start
+# this works and print "Hello World"
 
-npm run ts-node
-// this is failing with error: Error: Cannot find module './hello.js'
+$ npm run ts-node
+# this is failing with error: Error: Cannot find module './hello.js'
 
-npm run tsx
-// this works
+$ npm run tsx
+# this works
 
-npm run tsimp
-// this also works
+$ npm run tsimp
+# this also works
 ```
