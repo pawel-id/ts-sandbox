@@ -38,4 +38,4 @@ $ npm run test
 ```
 
 The problem above might be related to `ts-node` also since `tap` also uses it to
-handle typescript.
+handle typescript. The issue has been raised here [tap cannot find dependent module](https://github.com/tapjs/tapjs/issues/991).
