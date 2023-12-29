@@ -1,4 +1,11 @@
-This is source code accompanying the stackoverflow question "[ts-node cannot find dependent module](https://stackoverflow.com/questions/77733794/ts-node-cannot-find-dependent-module)".
+This is simple typescript project to replicate some issues related to `ts-node`
+throwing an error "Cannot find module './hello.js'". Probably the issues are
+related.
+
+## ts-node cannot find dependent module
+
+The issue has been described in the stackoverflow question
+"[ts-node cannot find dependent module](https://stackoverflow.com/questions/77733794/ts-node-cannot-find-dependent-module)".
 
 In order to replicate the issue clone this repository and run:
 
@@ -18,3 +25,17 @@ $ npm run tsx
 $ npm run tsimp
 # this also works
 ```
+
+## tap cannot find dependent module
+
+Very similar problem happening when trying to run tests using node `tap`:
+
+```shell
+$ npm install
+
+$ npm run test
+# this is failing with an error: annot find module '../src/hello.js'
+```
+
+The problem above might be related to `ts-node` also since `tap` also uses it to
+handle typescript.
