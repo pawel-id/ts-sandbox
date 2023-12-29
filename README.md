@@ -34,7 +34,7 @@ Very similar problem happening when trying to run tests using node `tap`:
 $ npm install
 
 $ npm run test
-# this is failing with an error: annot find module '../src/hello.js'
+# this is failing with an error: cannot find module '../src/hello.js'
 ```
 
 The problem above might be related to `ts-node` also since `tap` also uses it to
