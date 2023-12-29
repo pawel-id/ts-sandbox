@@ -1,0 +1,21 @@
+{
+  "name": "ts-sandbox",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "test": "tap",
+    "ts-node": "ts-node src/say.ts",
+    "tsx": "tsx src/say.ts",
+    "tsimp": "tsimp src/say.ts",
+    "build": "rimraf dist && tsc",
+    "start": "node dist/say.js"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "tap": "^18.6.1",
+    "ts-node": "^10.9.2",
+    "tsimp": "^2.0.10",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
