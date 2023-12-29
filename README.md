@@ -10,7 +10,7 @@ $ npm run start
 # this works and print "Hello World"
 
 $ npm run ts-node
-# this is failing with error: Error: Cannot find module './hello.js'
+# this is failing with an error: Cannot find module './hello.js'
 
 $ npm run tsx
 # this works
