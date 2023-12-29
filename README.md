@@ -1,5 +1,4 @@
-This is source code accompanying the stackoverflow question
-https://stackoverflow.com/questions/77733794/ts-node-cannot-find-dependent-module
+This is source code accompanying the stackoverflow question "[ts-node cannot find dependent module](https://stackoverflow.com/questions/77733794/ts-node-cannot-find-dependent-module)".
 
 In order to replicate the issue clone this repository and run:
 
