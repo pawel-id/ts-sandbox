@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: '20'
       - run: npm install
-      - run: npm run build --if-present
+      - run: npm run build
       - run: npm test
 
   build-and-test-with-workaround:
@@ -27,10 +27,7 @@ jobs:
         with:
           node-version: '20'
       - run: npm install
-      - run: npm run build --if-present
-      
-      # temporal workaround https://github.com/tapjs/tapjs/issues/991
-      - run: npx tap plugin add @tapjs/tsx
-      - run: npx tap plugin rm @tapjs/typescript 
-
+      - run: npm run build
+      - run: npm test || true
+      - run: npm run build
       - run: npm test
